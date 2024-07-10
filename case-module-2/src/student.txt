@@ -1,3 +1,2 @@
-SV-123,Quan,20/12/2000,Ha Noi,8.0
-SV-132,Nam,03/06/2012,Nam Dinh,7.0
+SV-134,Nguyen,29/04/2000,Ha Giang,8.0
 SV-312,Nguyen,09/11/2021,Hung Yen,7.0

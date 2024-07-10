@@ -76,6 +76,6 @@ public class Student implements Comparable<Student> {
     public String toString() {
         //Định dạng dateOfBirth khi in ra
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        return maSinhVien + "," + name + "," + dateOfBirth.format(formatter) + "," + homeTown + "," + gpa;
+        return "Mã sinh viên: " + maSinhVien + ", " + "Tên sinh viên: " + name + ", " + "Ngày sinh: " + dateOfBirth.format(formatter) + ", " + "Quê quán: " + homeTown + ", " + "Điểm trung bình: " + gpa;
     }
 }
