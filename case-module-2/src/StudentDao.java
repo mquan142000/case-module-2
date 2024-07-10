@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class StudentDao {
-    private static final String FILE_NAME = "/Users/minhquan/Documents/case-module-2/src/student.txt";
+    private static final String FILE_NAME = "/Users/minhquan/Documents/case-module-2./case-module-2/src/student.txt";
 
     public List<Student> read() {
         List<Student> students = new ArrayList<>();

@@ -6,6 +6,7 @@ import java.time.format.DateTimeFormatter;
 public class Student implements Comparable<Student> {
     private String maSinhVien;
     private String name;
+    //LocalDate thuộc gói java.time để xử lý các thao tác với ngày tháng
     private LocalDate dateOfBirth;
     private String homeTown;
     private double gpa;
@@ -14,6 +15,7 @@ public class Student implements Comparable<Student> {
     }
 
     public Student(String maSinhVien, String name, String dateOfBirth, String homeTown, double gpa) {
+        //DateTimeFormatter để định dạng và phân tích chuỗi ngày tháng
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         this.maSinhVien = maSinhVien;
         this.name = name;
@@ -45,6 +47,7 @@ public class Student implements Comparable<Student> {
     public void setDateOfBirth(String dateOfBirth) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         this.dateOfBirth = LocalDate.parse(dateOfBirth, formatter);
+        //Chuỗi ngày tháng được chuyển đổi thành LocalDate bằng cách sử dụng DateTimeFormatter và phương thức LocalDate.parse().
     }
 
     public String getHomeTown() {
@@ -71,6 +74,7 @@ public class Student implements Comparable<Student> {
 
     @Override
     public String toString() {
+        //Định dạng dateOfBirth khi in ra
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         return maSinhVien + "," + name + "," + dateOfBirth.format(formatter) + "," + homeTown + "," + gpa;
     }
